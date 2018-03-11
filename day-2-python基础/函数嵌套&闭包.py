@@ -3,23 +3,24 @@
 # @Time    : 0311
 # @Author  : Shylock
 # @Email   : JYFelt@163.com
-# @File    : 函数嵌套.py
+# @File    : 函数嵌套&闭包.py
 # @Software: PyCharm
 # ----------------------------------------------------
 # import something
 # 嵌套＆作用域
 
-
 def father(name):
-    # print('from father %s' % name)
+    print('from father %s' % name)
 
     def son():
         # name = 'JY'
-        # print('my father is %s' % name)
+        print('my father is %s' % name)
 
-        def g_son():
+        def grandson():
+            name = 'idk'
             print('my grandfather is %s' % name)
-        g_son()
+
+        grandson()
 
     son()
 
