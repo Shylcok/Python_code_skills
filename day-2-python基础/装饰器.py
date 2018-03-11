@@ -32,6 +32,12 @@ def foo():
     print('this is func foo!')
 
 
+# 语法糖
+@timer  # run = timer(run)
+def run():
+    time.sleep(0.3)
+    print('run!')
+
+
 if __name__ == '__main__':
-    foo = timer(foo)
-    foo()
+    run()
