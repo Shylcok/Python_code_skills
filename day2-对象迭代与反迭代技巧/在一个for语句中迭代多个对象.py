@@ -34,3 +34,6 @@ for s in chain(e1, e2, e3, e4):
     if s > 90:
         count += 1
 print(count)
+
+# a = zip([1, 2, 3], ('a', 'b', 'c', 'd'))
+# print(a)
