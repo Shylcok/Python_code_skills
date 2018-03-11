@@ -33,5 +33,5 @@ def foo():
 
 
 if __name__ == '__main__':
-    res = timer(foo)
-    print(res())
+    foo = timer(foo)
+    foo()
