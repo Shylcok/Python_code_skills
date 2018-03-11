@@ -7,3 +7,11 @@
 # @Software: PyCharm
 # ----------------------------------------------------
 # import something
+from random import randint
+
+# l = [randint(10, 20) for x in range(10)]
+l = [10, 11, 18, 19, 16, 19, 18, 13, 19, 11]
+a, *_, c = l
+print(a)
+print(_)
+print(c)
