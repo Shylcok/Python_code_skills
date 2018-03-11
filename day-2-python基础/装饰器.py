@@ -7,31 +7,31 @@
 # @Software: PyCharm
 # ----------------------------------------------------
 # import something
-# 装饰器=高阶函数+函数嵌套+闭包
 import time
 
 
 def timer(func):
-    def wapper(*args, **kwargs):
-        start_time = time.time()
-        res = wapper(*args, **kwargs)
-        stop_time = time.time()
-        print('函数%s的运行时间为%d' % (func, (start_time - stop_time)))
-        return res
-    return wapper()
+    """
+    装饰器=高阶函数+函数嵌套+闭包
+    装饰器的框架
+    :param func:
+    :return:
+    """
+
+    def wrapper():
+        s = time.time()
+        func()
+        e = time.time()
+        print('the func %s runnig time is %f' % (func.__name__, e - s))
+
+    return wrapper
 
 
-@timer
-def cal(l):
-    # start_time = time.time()
-    res = 0
-    # time.sleep(0.2)
-    for i in l:
-        res += i
-
-    # stop_time = time.time()
-    print(res)  # 'time:{}'.format(start_time - stop_time))
-    return res
+def foo():
+    time.sleep(0.2)
+    print('this is func foo!')
 
 
-cal(range(100))
+if __name__ == '__main__':
+    res = timer(foo)
+    print(res())

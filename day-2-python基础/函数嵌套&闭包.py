@@ -9,6 +9,7 @@
 # import something
 # 嵌套＆作用域
 
+
 def father(name):
     print('from father %s' % name)
 
