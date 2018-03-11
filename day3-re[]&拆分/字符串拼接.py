@@ -23,3 +23,7 @@ for p in pl:
 
 a = ''.join(pl)
 print(a)
+
+l = ['avd', 123, 45.1, 'xty']
+b = ''.join(str(x) for x in l)
+print(b)
