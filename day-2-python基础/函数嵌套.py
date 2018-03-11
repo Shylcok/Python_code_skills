@@ -7,13 +7,19 @@
 # @Software: PyCharm
 # ----------------------------------------------------
 # import something
+# 嵌套＆作用域
 
 
 def father(name):
     # print('from father %s' % name)
 
     def son():
-        print('my father is %s' % name)
+        # name = 'JY'
+        # print('my father is %s' % name)
+
+        def g_son():
+            print('my grandfather is %s' % name)
+        g_son()
 
     son()
 
