@@ -11,6 +11,7 @@ import time
 
 
 def timer(func):
+
     def wrapper(*args, **kwargs):
         s = time.time()
         res = func(*args, **kwargs)
