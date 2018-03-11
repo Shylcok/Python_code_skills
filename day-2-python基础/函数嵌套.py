@@ -9,4 +9,14 @@
 # import something
 
 
+def father(name):
+    # print('from father %s' % name)
 
+    def son():
+        print('my father is %s' % name)
+
+    son()
+
+
+if __name__ == '__main__':
+    father('Felt')
