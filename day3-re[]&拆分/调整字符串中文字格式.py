@@ -7,3 +7,11 @@
 # @Software: PyCharm
 # ----------------------------------------------------
 # import something
+import re
+
+log = open('/var/log/dpkg.log').read()
+"""
+re.sub: 捕获组
+"""
+t = re.sub('(?P<year>\d{4})-(?P<month>\d{2})-(?P<day>\d{2})', r'\g<month>/\g<day>/\g<year>', log)
+print(t)
