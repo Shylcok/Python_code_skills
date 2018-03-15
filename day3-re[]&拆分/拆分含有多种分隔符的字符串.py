@@ -44,5 +44,5 @@ if __name__ == '__main__':
     print(mySpilt(s, ';|/\,\t'))
 
     import re
-    a = re.split('[;,|/\t]+', s)
+    a = re.split('[\\\;,|/\t]+', s)
     print(a)

@@ -26,7 +26,7 @@ class WeatherIterator(Iterator):
     def getweather(self, city):
         r = requests.get('http://wthrcdn.etouch.cn/weather_mini?city=' + city)
         data = r.json()['data']['forecast'][0]
-        return '%s : %s ,%s , %s' % (city, data['type'],data['high'], data['low'])
+        return '%s : %s ,%s , %s' % (city, data['type'], data['high'], data['low'])
 
 
 class WeatherIterable(Iterable):
@@ -38,5 +38,5 @@ class WeatherIterable(Iterable):
 
 
 if __name__ == '__main__':
-    for x in WeatherIterable(['北京', '西安', '上海', '杭州']):
+    for x in WeatherIterable('西安'):
         print(x)
