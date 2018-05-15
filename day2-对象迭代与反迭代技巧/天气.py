@@ -38,5 +38,6 @@ class WeatherIterable(Iterable):
 
 
 if __name__ == '__main__':
+    print(WeatherIterable('西安'))
     for x in WeatherIterable('西安'):
         print(x)

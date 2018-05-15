@@ -1,15 +1,12 @@
 # -*- coding: utf-8 -*-
 # @Project : Python高效编程技巧实战
-# @Time    : 0315
+# @Time    : 0424
 # @Author  : Shylock
 # @Email   : JYFelt@163.com
-# @File    : 异常处理.py
+# @File    : config.py
 # @Software: PyCharm
 # ----------------------------------------------------
 # import something
-a = None
-if a == None:
-    try:
-        print(a.nor)
-    except Exception as e:
-        print(e)
+APP_ID = '11150200'
+API_KEY = 't6Lka8Hl4i9ngiYnnszYjmZG'
+SECRET_KEY = 'YTmcqaGD004kdx5eMzawWKy4Gg2CNxDR'

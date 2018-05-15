@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
 # @Project : Python高效编程技巧实战
-# @Time    : 0315
+# @Time    : 0426
 # @Author  : Shylock
 # @Email   : JYFelt@163.com
-# @File    : 异常处理.py
+# @File    : __init__.py.py
 # @Software: PyCharm
 # ----------------------------------------------------
 # import something
-a = None
-if a == None:
-    try:
-        print(a.nor)
-    except Exception as e:
-        print(e)
+# import sys
+# x = sys.stdin.readline()
+# print(x)
+res = list(enumerate('abcd'))
+print(res)

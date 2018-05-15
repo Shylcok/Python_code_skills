@@ -7,3 +7,5 @@
 # @Software: PyCharm
 # ----------------------------------------------------
 # import something
+f = open('demo2.txt','w',buffering=0)
+f.write('a')

@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 # @Project : Python高效编程技巧实战
-# @Time    : 0315
+# @Time    : 0417
 # @Author  : Shylock
 # @Email   : JYFelt@163.com
-# @File    : 异常处理.py
+# @File    : iterable.py
 # @Software: PyCharm
 # ----------------------------------------------------
 # import something
-a = None
-if a == None:
-    try:
-        print(a.nor)
-    except Exception as e:
-        print(e)
+def countdown(n):
+    print('Counting down')
+    while n > 0:
+       yield n
+       n -= 1
+

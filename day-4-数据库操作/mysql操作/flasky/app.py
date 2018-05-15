@@ -1,15 +1,22 @@
 # -*- coding: utf-8 -*-
 # @Project : Python高效编程技巧实战
-# @Time    : 0315
+# @Time    : 0410
 # @Author  : Shylock
 # @Email   : JYFelt@163.com
-# @File    : 异常处理.py
+# @File    : app.py
 # @Software: PyCharm
 # ----------------------------------------------------
 # import something
-a = None
-if a == None:
-    try:
-        print(a.nor)
-    except Exception as e:
-        print(e)
+
+from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def hello():
+    return 'hello world'
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
